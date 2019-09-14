@@ -1,0 +1,38 @@
+<script src="/javascripts/main.js"></script>
+<div class="container">
+    <h3>Add Bot in any meetings</h3>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Connect Call
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="/">Go to call page</a></li>
+        </ul>
+    </div>
+    <br>
+    <form class="newTicket">
+        {{!-- <img src="/images/phone3.jpg"> --}}
+        <div class="form-group">
+            <label for="usr">Number:</label>
+            <input type="text" class="form-control testSize" name="phoneNumber" id="phoneNumber">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Extension:</label>
+            <input type="text" class="form-control testSize" name="extension" id="extension">
+        </div>
+        <button type="button" class="btn btn-success answerButton">Start Meeting</button>
+        <button type="button" class="btn btn-warning hangUpButton" style="display: none;">End Meeting</button>
+        <a href="/" type="button" class="btn btn-success newCallButton" style="display: none;">New Meeting</a>
+        <img src="/images/loading.gif" id="loader" style="display: none;">
+        <span class="message">Loading...</span>
+        <br>
+        <br>
+        <div class="form-group">
+            <audio controls id="audio" style="display: none;">
+                <source src="" type="audio/ogg" id="recordUrl">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <label for="comment" style="display: none;" id="labelTranscription">Transcription:</label>
+        <textarea class="form-control testSize hidden" rows="5" id="transcription"></textarea>
+    </form>
+</div>
