@@ -4,13 +4,13 @@ var app = express();
 
 app.get('/', function(req, res) {
   res.send({
-    "Output" : "Hello World!"
+    Output: 'Hello World again!'
   });
 });
 
 app.post('/', function(req, res) {
   res.send({
-    "Output" : "Hello World!"
+    Output: 'Hello World again!'
   });
 });
 
