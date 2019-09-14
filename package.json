@@ -1,17 +1,30 @@
 {
-    "name": "express-HelloWorld",
-    "description": "Hello World ExpressJS WebService",
-    "version": "0.0.1",
-    "private": true,
-    "dependencies": {
-        "express": "4.16.2"
-    },
-    "devDependencies": {
-        "mocha": "5.0.0",
-        "unit.js": "2.0.0",
-        "supertest": "3.0.0"
-    },
-    "scripts": {
-        "test": "mocha --recursive tests --exit"
-    }
+  "name": "express-HelloWorld",
+  "description": "Hello World ExpressJS WebService",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.16.2",
+    "axios": "^0.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "deepai": "^1.0.10",
+    "express-session": "^1.16.2",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "moment": "^2.24.0",
+    "morgan": "~1.9.1",
+    "node-cmd": "^3.0.0",
+    "session": "^0.1.0",
+    "twilio": "^3.33.1"
+  },
+  "devDependencies": {
+    "mocha": "5.0.0",
+    "unit.js": "2.0.0",
+    "supertest": "3.0.0"
+  },
+  "scripts": {
+    "test": "mocha --recursive tests --exit"
+  }
 }
