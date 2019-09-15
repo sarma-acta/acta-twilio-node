@@ -1,0 +1,8 @@
+[user]
+	name = Mahipal Gurjala
+	email = sarma.bkp@gmail.com
+	username = sarma-acta
+[core]
+	editor = vim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
