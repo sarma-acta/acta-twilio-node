@@ -67,5 +67,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(port);
+app.listen(port, function() {
+  console.log('Port is running on 3000 port');
+});
 module.exports = app;
