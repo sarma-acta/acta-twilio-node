@@ -33,10 +33,10 @@ artifacts:
     - package.json
     - server.js
     - appspec.yml
-    - public/*
-    - views/*
-    - routes/*
-    - config/*
+    - public/**/*
+    - views/**/*
+    - routes/**/*
+    - config/**/*
     - scripts/*
     - node_modules/**/*
     - template-configuration.json
