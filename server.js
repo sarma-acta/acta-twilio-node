@@ -1,7 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
 var session = require('express-session');
-
+var cors = require('cors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -20,6 +20,7 @@ var token = require('./routes/token');
 
 var app = express();
 
+app.use(cors());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -68,6 +69,6 @@ app.use(function(err, req, res, next) {
 });
 
 app.listen(port, function() {
-  console.log('Port is running on 3000 port');
+  console.log('CORS-enabled web server listening on port 3000');
 });
 module.exports = app;
