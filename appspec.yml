@@ -19,14 +19,14 @@ hooks:
   AfterInstall:
     - location: scripts/install_dependencies
       timeout: 300
-      runas: root
+      runas: ec2-user
     - location: scripts/codestar_remote_access
       timeout: 300
-      runas: root
+      runas: ec2-user
     - location: scripts/start_server
       timeout: 300
-      runas: root
+      runas: ec2-user
   ApplicationStop:
     - location: scripts/stop_server
       timeout: 300
-      runas: root
+      runas: ec2-user
