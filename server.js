@@ -69,6 +69,6 @@ app.use(function(err, req, res, next) {
 });
 
 app.listen(port, function() {
-  console.log('CORS-enabled web server listening on port 3000');
+  console.log('CHECKING -- CORS-enabled web server listening on port 3000');
 });
 module.exports = app;
