@@ -10,7 +10,7 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "deepai": "^1.0.10",
-    "express": "4.16.2",
+    "express": "4.18.2",
     "express-session": "^1.16.2",
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "mocha": "5.0.0",
-    "unit.js": "2.0.0",
+    "unit.js": "2.1.1",
     "supertest": "3.0.0"
   },
   "scripts": {
